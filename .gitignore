@@ -1,7 +1,38 @@
 # Protects real (non-anonymized) material. Never commit real student, guardian or staff data.
 discovery/raw/
+
+# Secrets and backups
 *.bak
 .env
+.env.*
 *.pfx
 *.key
-# US-001 will extend this file for .NET / Angular.
+*.pem
+appsettings.*.local.json
+secrets.json
+*.7z.key
+
+# .NET
+bin/
+obj/
+*.user
+*.suo
+.vs/
+TestResults/
+*.nupkg
+publish/
+
+# Node / Angular
+node_modules/
+dist/
+.angular/
+coverage/
+npm-debug.log*
+
+# IDE / OS
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp
+Thumbs.db
+.DS_Store
