@@ -1,0 +1,7 @@
+# Protects real (non-anonymized) material. Never commit real student, guardian or staff data.
+discovery/raw/
+*.bak
+.env
+*.pfx
+*.key
+# US-001 will extend this file for .NET / Angular.
